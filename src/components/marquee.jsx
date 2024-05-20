@@ -56,6 +56,8 @@ const DIV = styled.div`
     }
     
   }
+
+  /* second commit */
 `
 
 export default Marquee
