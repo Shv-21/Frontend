@@ -1,25 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MdArrowDownward } from "react-icons/md";
-import { useEffect } from 'react';
 import img1 from './images/first.png'
 import img2 from './images/second.png'
 import img3 from './images/third.png'
 
 const Review = () => {
 
-  useEffect(()=>{
-    const ty = () =>{
-
-           document.querySelectorAll(".read").forEach((element)=>{
-            element.addEventListener('click', ()=>{
-              element.parentElement.classList.toggle('active');
-              element.parentElement.children[0].children[1].classList.toggle('active')
-            })})
-
-    }
-    return () => ty()
-  }, [])
+    const ty = () =>{  
+            document.querySelectorAll(".read").forEach((element)=>{
+            element.parentElement.classList.toggle('active');
+            element.parentElement.children[0].children[1].classList.toggle('active')
+        })}
 
   const HandleEnter = (id) =>{
                document.querySelectorAll(`.${id}`).forEach((element)=>{
@@ -70,7 +62,7 @@ const Review = () => {
                </div>
               </div>
                </div>
-              <span className='custom read'>Read</span>
+              <span className='custom read' onClick={ty} >Read</span>
             </div>
          </div>
          <div className="review">
@@ -106,7 +98,7 @@ const Review = () => {
                </div>
               </div>
               </div>
-              <span className='custom read' >Read</span>
+              <span className='custom read' onClick={ty} >Read</span>
             </div>
          </div>
          <div className="review">
@@ -141,7 +133,7 @@ const Review = () => {
                </div>
               </div>
               </div>
-             <span className='custom read' >Read</span>
+             <span className='custom read' onClick={ty} >Read</span>
             </div>
          </div>
        </div>  
