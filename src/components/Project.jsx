@@ -150,6 +150,63 @@ const Div = styled.div`
     transform: translateY(0%);
   }
 
+  @media (max-width: 769px){
+
+    h1{
+      font-size: 40px;
+    }
+
+    .project{
+      flex-direction: column;
+    }
+
+    .heading{
+      gap: 2vw;
+    }    
+
+    .dot{
+      width: 10px;
+      height: 10px;
+    }
+
+    .box01 .show .th, .box02 .show .th{
+      top: 47%;
+      left: 30%;
+    }
+
+    .title{
+      font-size: 12vw;
+    }
+
+  }
+
+  @media (max-width: 426px){
+
+    h1{
+      font-size: 31px;
+    }
+
+    .heading{
+      gap: 2vw;
+    }
+    
+    .dot{
+      width: 8px;
+      height: 8px;
+    }
+
+    .box01 .show .th, .box02 .show .th{
+      top: 47%;
+      left: 30%;
+    }
+
+    .title{
+      font-size: 12vw;
+    }
+
+
+  }
+
 `
 
 export default Project

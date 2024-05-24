@@ -161,40 +161,13 @@ const DIV = styled.div`
   .custom{
     display: inline-block;
     width: fit-content;
+    text-align: center;
     position: relative;
-  }
-
-  .custom::after{
-    position: absolute;
-    content: '';
-    width: 100%;
-    bottom: 0;
-    right: 0;
-    border: 1px solid black;
-    border-bottom: none;
-    z-index: 100;
-  }
-
-  .custom:hover::after{
-    animation: moving .7s linear ;
-    animation-iteration-count: 1;
   }
 
   .custom:hover{
     cursor: pointer;
   }
-
-  @keyframes moving {
-  50% {
-    width: 0%;
-  }
-
-  100% {
-    width: 100%;
-    left: 0;
-    right: unset;
-  }
-}
 
 .review{
     border-top: 1px solid #4d4c4c;
@@ -213,8 +186,8 @@ const DIV = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin: 1.5vw 0;
-    max-height: 1.3vw;
+    margin-block: 15px;
+    max-height: 18px;
     overflow: hidden;
     transition: max-height 2s ease;
   }
@@ -225,7 +198,11 @@ const DIV = styled.div`
   }
 
   .read{
-    font-weight: 500;
+    font-weight: 600;
+  }
+
+  .front.active .read{
+    color: grey;
   }
 
   .button01{
@@ -238,7 +215,7 @@ const DIV = styled.div`
       border: 1px solid black;
       border-radius: 40px;
       padding: .4vw .8vw;
-      font-size: .95vw;
+      font-size: 1vw;
       height: fit-content;
     }
 
@@ -315,7 +292,6 @@ const DIV = styled.div`
 
   .front.active{
     max-height: 30vw;
-    margin: 1.5vw 0 3vw 0;
   }
 
   .service span{
@@ -330,55 +306,13 @@ const DIV = styled.div`
   }
 
   .oc{
-    width: 10vw;
+    width: 124px;
   }
 
   .service{
     width: 19vw;
   }
 
-  @media (max-width: 1409px){
-    .front{
-      max-height: 1.6vw;
-      margin-top: 1.7vw;
-    }
-
-    .front.active{
-    margin-top: 1.7vw;
-  }
-}
-
-@media (max-width: 1237px){
-  .oc{
-    width: 11vw;
-  }
-}
-
-@media (max-width: 1140px){
-  .front{
-    max-height: 1.7vw;
-      margin-top: 1.8vw;
-  }
-  .front.active{
-    margin-top: 1.8vw;
-  }
-}
-
-@media (max-width: 1124px) {
-  .oc{
-    width: 12vw;
-  }
-}
-
-@media (max-width: 1069px){
-  .front{
-    max-height: 1.8vw;
-      margin-top: 1.9vw;
-  }
-  .front.active{
-    margin-top: 1.9vw;
-  }
-}
 
 @media (max-width: 1030px) {
 
@@ -389,10 +323,6 @@ const DIV = styled.div`
   .separate{
     flex-direction: column;
     gap: 3vw;
-  }
-
-  .oc{
-    width: 13vw;
   }
 
   .service{
@@ -424,6 +354,75 @@ const DIV = styled.div`
   p{
     width: fit-content;
     line-height: 2.2vw;
+  }
+}
+
+@media (max-width: 999px){
+  .front.active{
+    max-height: 95vw;
+  }
+}
+
+@media (max-width: 769px){
+
+  .front.active{
+    max-height: 100vw;
+  }
+
+  .button01 h3{
+    padding: 1.3vw 2vw;
+    font-size: 2vw;
+  }
+
+  p{
+    line-height: 2.8vw;
+  }
+
+}
+
+
+@media (max-width: 459px) {
+  .front.active{
+    max-height: 100vw;
+  }
+}
+
+@media (max-width: 426px){
+  h1{
+      font-size: 31px;
+    }
+
+  .front.active{
+    max-height: 100vw;
+  }
+
+  .separate{
+    gap: 6vw;
+  }
+
+  p{
+    line-height: 5vw;
+  }
+
+  .service .tags{
+    gap: 3vw;
+  }
+
+  .service{
+    gap: 4vw;
+  }
+
+  .button01 h3{
+    padding: 1.5vw 2.5vw;
+    font-size: 3.5vw;
+  }
+
+  .info, .dis{
+    gap: 5vw;
+  }
+
+  .info img{
+    width: 25vw;
   }
 
 }

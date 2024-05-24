@@ -17,9 +17,11 @@ const Marquee = () => {
 
 const DIV = styled.div`
    z-index: 100;
+
   .banner{
     white-space: nowrap;
     display: flex;
+    align-items: center;
     background: #004D43;
     border-radius: 15px 15px 0 0;
   }
@@ -44,7 +46,6 @@ const DIV = styled.div`
     transform: translateY(-3.5vw);
    }
 
-
   @keyframes motion {
 
     0%{
@@ -57,7 +58,44 @@ const DIV = styled.div`
     
   }
 
-  /* second commit */
+  @media (max-width: 769px) {
+
+    h1{
+      font-size: 30vw;
+    }
+
+    .banner{
+      padding: 5vw 0; 
+    }
+
+    hr:first-child{
+     transform: translateY(10vw);
+    }
+
+    hr:last-child{
+     transform: translateY(-7vw);
+    }
+
+  }
+
+  @media (max-width: 426px) {
+
+    .banner{
+      padding: 10vw 0; 
+    }
+
+    h1{
+      font-size: 30vw;
+    }
+
+    hr:first-child{
+     transform: translateY(15vw);
+    }
+
+    hr:last-child{
+     transform: translateY(-11.5vw);
+    }
+  }
 `
 
 export default Marquee

@@ -22,9 +22,20 @@ body{
 
 #main.active{
   background: #212121;
-  padding-bottom: 5.1vw;
+  padding-bottom: 10vw;
 }
 
-#root.active #project, #root.active #review,#root.active #approch, #root.active #banner{
+@media (max-width: 426px){
+  #main.active{
+    background: #212121;
+    padding-bottom: 18vw;
+  }
+}
+
+#root.active #heroend, #root.active{
+  margin-bottom: 0;
+}
+
+#root.active #project, #root.active #review,#root.active #approch, #root.active #banner, #root.active #heroend{
   display: none;
 }

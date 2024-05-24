@@ -62,7 +62,6 @@ const Div = styled.div`
     .herotag1{
       z-index: 5;
       background-color: #f1f1f1;
-      padding-bottom: vw;
       width: fit-content;
       animation: slide 1s ease forwards;
     }
@@ -192,6 +191,11 @@ const Div = styled.div`
 
       margin-bottom: 8vw;
 
+      h1{
+      font-size: 61px;
+      line-height: 8.5vw;
+    }
+
       .animation{
         display: none;
       }
@@ -219,6 +223,122 @@ const Div = styled.div`
     }
 
     }
+
+    @media (max-width: 1025px){
+
+      h1{
+      font-size: 10vw;
+      line-height: 8.5vw;
+    }
+
+    .ochiimg{
+      width: 11vw;
+      top: 22.5%;
+    }
+
+    @keyframes slide {
+      100%
+      {
+        transform: translateX(13vw);
+      }
+     }
+
+    }
+
+    @media (max-width: 769px){
+
+      #heading{
+      margin-top: 8vw;
+      margin-bottom: 12vw;
+     }
+
+      #heroend{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4vw;
+    }
+
+      h1{
+      font-size: 10vw;
+      line-height: 8.5vw;
+    }
+
+      #stp h3{
+       font-size: 2vw;
+       padding: 1.2vw 2vw;
+      }
+
+      #heroend h3{
+        margin: 0;
+      }
+
+      .ochiimg{
+      width: 10vw;
+      top: 16%;
+    }
+
+     @keyframes slide {
+      100%
+      {
+        transform: translateX(12vw);
+      }
+     }
+
+    }
+
+    @media (max-width: 574px){
+      #heading{
+      margin-top: 8vw;
+      margin-bottom: 32vw;
+     }
+     .ochiimg{
+      top: 11.5%;
+    }
+
+     #heroend{
+      gap: 8vw;
+     }
+    }
+
+   @media (max-width: 426px) {
+
+    #heroend{
+      gap: 4vw;
+    }
+
+    h1{
+      font-size: 13vw;
+      line-height: 11vw;
+    }
+
+    .ochiimg{
+      width: 14vw;
+      top: 14.5%;
+    }
+
+    @keyframes slide {
+
+     100%{
+         transform: translateX(16vw);
+     }
+    }
+
+    #heading{
+      margin-top: 8vw;
+      margin-bottom: 30vw;
+     }
+
+    #heroend{
+      margin-block: 6vw;
+      gap: 7vw;
+      margin-bottom: 25vw;
+    } 
+
+    #stp h3{
+      font-size: 3.5vw;
+      padding: 2vw 3vw;
+    }
+   } 
 
 `
 export default Hero

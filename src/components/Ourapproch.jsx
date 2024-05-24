@@ -287,6 +287,183 @@ const Div = styled.div`
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
+@media (max-width: 1025px){
+
+  .passage{
+    font-size: 4vw;
+    line-height: 4.5vw;
+    padding: 8vw 4vw;
+  }
+
+  .box-1 p{
+    line-height: unset;
+  }
+
+  .box-2{
+      gap: 1vw;
+  }
+
+  .side-1{
+    gap: 2vw;
+  }
+
+  #button{
+    padding: 1.5vw 6vw 1.5vw 2vw;
+  }
+
+  #button h3{
+    font-size: large;
+  }
+
+  #button:hover svg{
+    top: 30%;
+  }
+
+  .dot{
+    top: 31%;
+    width: 1vw;
+    height: 1vw;
+  }
+
+}
+
+@media (max-width: 769px) {
+
+  .box, .mbox, .approch{
+    flex-direction: column;
+  }
+
+  .passage{
+    font-size: 4vw;
+    line-height: 5vw;
+    padding: 8vw 4vw;
+  }
+
+  .box{
+    gap: 2vw;
+  }
+
+  .box-1 p{
+    line-height: unset;
+  }
+
+  .box-1{
+    width: fit-content;
+  }
+
+  .box-2{
+      gap: 1vw;
+  }
+
+  .side-1 h1{
+    font-size: 40px;
+  }
+
+  .approch{
+     gap: 7vw;
+  } 
+
+  #button{
+    padding: 2vw 7vw 2vw 3vw;
+  }
+
+  #button h3{
+    font-size: large;
+  }
+
+  #button:hover svg{
+    top: 26%;
+    left: 30%;
+  }
+
+  #nc{
+    width: 4vw;
+    height: 4vw;
+  }
+
+  #nc svg{
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+
+  .dot{
+    top: 31%;
+    width: 1vw;
+    height: 1vw;
+  }
+
+  .side-1{
+    gap: 4vw;
+  }
+
+  .side-2{
+    width: 92vw;
+  }
+
+}
+
+@media (max-width: 426px){
+  .passage{
+    font-size: 7vw;
+    line-height: 8vw;
+    padding: 8vw 4vw;
+  }
+
+  .box{
+    gap: 4vw;
+  }
+
+  .box-2{
+      gap: 2vw;
+  }
+
+  .approch{
+     gap: 7vw;
+  } 
+
+  #button{
+    padding: 3vw 10vw 3vw 5vw;
+  }
+
+  #button h3{
+    font-size: large;
+  }
+
+  #button:hover svg{
+    top: 22%;
+    left: 24%;
+  }
+
+  #nc{
+    width: 6vw;
+    height: 6vw;
+  }
+
+  #nc svg{
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .dot{
+    top: 35%;
+    width: 1.5vw;
+    height: 1.5vw;
+  }
+
+  .side-1{
+    gap: 4vw;
+  }
+
+  .side-1 h1{
+    font-size: 31px;
+  }
+
+  .side-2{
+    width: 92vw;
+  }
+
+}
+
 `
 
 export default Ourapproch

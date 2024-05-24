@@ -206,6 +206,11 @@ const Div = styled.div`
      top: unset;
     }
 
+   .icon, .button::after{
+    display: none;
+
+   }
+
     .button{
       height: 9vw;
       width: 44vw;
@@ -232,7 +237,7 @@ const Div = styled.div`
       align-items: flex-start;
       gap: 0vw;
       width: 100%;
-      top: -100%;
+      top: -100vw;
       border-top: 2px solid grey;
       left: 0;
       padding: 0 0 7.3vw 3vw;
@@ -241,8 +246,10 @@ const Div = styled.div`
       transition: all  0.6s cubic-bezier(0, 0.55, 0.45, 1);
     }
 
-    .om.active .wrapper{
-      top: 10vw;
+      .om.active .wrapper{
+        top: 10vw;
+      padding-bottom: 0;
+      height: 100vh;
     }
 
     .button-wrapper .text{
@@ -262,6 +269,82 @@ const Div = styled.div`
 
     .om.active .text{
       color: #f1f1f1;
+    }
+
+  }
+
+  @media (max-width: 769px){
+
+    padding-top: 3vw;
+
+    .Line{
+      width: 24px;
+    }
+
+    .om.active .FirstLine{
+      transform: translate(0, 0) rotate(-45deg)
+    }
+
+    .om.active .SecondLine{
+      transform: translate(0, -6.3px) rotate(45deg);
+    }
+
+    .om.active .wrapper{
+      top: 15vw;
+      padding: 3vw 0 20vw 4vw;
+    }
+
+  }
+
+  @media (max-width: 708px) {
+    .button{
+      height: 14vw;
+      width: 54vw;
+    }
+
+    .button-wrapper .text{
+      font-size: 12vw
+    }
+
+    .om.active .wrapper{
+      top: 17vw;
+    }
+
+  }
+
+  @media (max-width: 580px) {
+    .button{
+      height: 15vw;
+      width: 60vw;
+    }
+
+    .button-wrapper .text{
+      font-size: 14vw
+    }
+
+    .om.active .wrapper{
+      top: 18vw;
+    }
+  }
+
+  @media (max-width: 426px){
+    padding: 4vw 4vw;
+
+    .om.active .wrapper{
+      top: 29vw;
+    }
+
+    .button{
+      height: 14vw;
+      width: 54vw;
+    }
+
+    .button-wrapper .text{
+      font-size: 12vw
+    }
+
+    .om.active .wrapper{
+      padding: 3vw 0 0vw 4vw;
     }
 
   }
