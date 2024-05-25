@@ -8,10 +8,8 @@ import img3 from './images/third.png'
 const Review = () => {
 
     const ty = (id) =>{  
-    
       document.getElementById(id).parentElement.classList.toggle('active')
       document.getElementById(id).parentElement.children[0].children[1].classList.toggle('active')
-      
     }
 
   const HandleEnter = (id) =>{
@@ -23,7 +21,7 @@ const Review = () => {
       document.querySelectorAll(`.${id}`).forEach((element)=>{
       element.classList.remove("active")})
   }
-// ver
+
   return (
     <DIV id='review'>
           
