@@ -313,7 +313,7 @@ const Div = styled.div`
 
     .ochiimg{
       width: 14vw;
-      top: 14.5%;
+      top: 12.2%;
     }
 
     @keyframes slide {
@@ -333,6 +333,10 @@ const Div = styled.div`
       gap: 7vw;
       margin-bottom: 25vw;
     } 
+
+    #heroend h3, #stp h3{
+      font-weight: 600;
+    }
 
     #stp h3{
       font-size: 3.5vw;

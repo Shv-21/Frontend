@@ -328,7 +328,7 @@ const Div = styled.div`
   }
 
   @media (max-width: 426px){
-    padding: 4vw 4vw;
+    padding: 6vw 4vw;
 
     .om.active .wrapper{
       top: 29vw;
