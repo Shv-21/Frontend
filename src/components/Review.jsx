@@ -23,7 +23,7 @@ const Review = () => {
       document.querySelectorAll(`.${id}`).forEach((element)=>{
       element.classList.remove("active")})
   }
-
+// ver
   return (
     <DIV id='review'>
           
