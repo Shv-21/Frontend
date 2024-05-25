@@ -7,11 +7,12 @@ import img3 from './images/third.png'
 
 const Review = () => {
 
-    const ty = () =>{  
-            document.querySelectorAll(".read").forEach((element)=>{
-            element.parentElement.classList.toggle('active');
-            element.parentElement.children[0].children[1].classList.toggle('active')
-        })}
+    const ty = (id) =>{  
+    
+      document.getElementById(id).parentElement.classList.toggle('active')
+      document.getElementById(id).parentElement.children[0].children[1].classList.toggle('active')
+      
+    }
 
   const HandleEnter = (id) =>{
                document.querySelectorAll(`.${id}`).forEach((element)=>{
@@ -62,12 +63,12 @@ const Review = () => {
                </div>
               </div>
                </div>
-              <span className='custom read' onClick={ty} >Read</span>
+              <span className='custom read read01' id='read01' onClick={()=>ty("read01")} >Read</span>
             </div>
          </div>
          <div className="review">
             <div className="front">
-              <div className="separate">
+              <div className="separate">  
               <div className='oc' ><span className="custom">Planetly</span></div>
               <div className="service">
                  <span >Service:</span>
@@ -98,7 +99,7 @@ const Review = () => {
                </div>
               </div>
               </div>
-              <span className='custom read' onClick={ty} >Read</span>
+              <span className='custom read read02' id='read02' onClick={()=>ty('read02')} >Read</span>
             </div>
          </div>
          <div className="review">
@@ -133,7 +134,7 @@ const Review = () => {
                </div>
               </div>
               </div>
-             <span className='custom read' onClick={ty} >Read</span>
+             <span className='custom read read03' id='read03' onClick={()=>ty('read03')} >Read</span>
             </div>
          </div>
        </div>  
