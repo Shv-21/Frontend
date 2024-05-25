@@ -384,7 +384,7 @@ const DIV = styled.div`
     }
 
   .front.active{
-    max-height: 100vw;
+    max-height: 120vw;
   }
 
   .separate{
