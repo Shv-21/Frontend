@@ -152,8 +152,11 @@ const Div = styled.div`
 
   @media (max-width: 769px){
 
+    margin-top: 12vw;
+
     h1{
       font-size: 40px;
+      margin-bottom: 4vw;
     }
 
     .project{
@@ -182,12 +185,16 @@ const Div = styled.div`
 
   @media (max-width: 426px){
 
+    margin-block: 17vw 0vw;
+
     h1{
       font-size: 31px;
+      margin-block: 4vw;
     }
 
     .heading{
       gap: 2vw;
+      margin-bottom: 3vw;
     }
     
     .dot{

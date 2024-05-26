@@ -187,12 +187,31 @@ const Div = styled.div`
       
     }
 
+    @media (max-width: 1440px){
+
+      #stp h3{
+        padding: .6vw 1.2vw;
+      }
+
+      h3{
+        font-weight: 600;
+      }
+
+    }
+
+    @media (max-width: 1301px) {
+      #stp h3 {
+       font-size: 1.1vw;
+       padding: .6vw 1.2vw;
+}
+    }
+
     @media (max-width: 1213px){
 
       margin-bottom: 8vw;
 
       h1{
-      font-size: 61px;
+      font-size: 10vw;
       line-height: 8.5vw;
     }
 
@@ -201,7 +220,8 @@ const Div = styled.div`
       }
 
       .ochiimg{
-        top: 19.8%;
+        top: 22.5%;
+        width: 11vw;
       }
 
     #stp h3 {
@@ -221,6 +241,13 @@ const Div = styled.div`
     #text{
 
     }
+
+         @keyframes slide {
+      100%
+      {
+        transform: translateX(12vw);
+      }
+     }
 
     }
 
@@ -273,8 +300,8 @@ const Div = styled.div`
       }
 
       .ochiimg{
-      width: 10vw;
-      top: 16%;
+      width: 11vw;
+      top: 16.5%;
     }
 
      @keyframes slide {
@@ -292,11 +319,19 @@ const Div = styled.div`
       margin-bottom: 32vw;
      }
      .ochiimg{
-      top: 11.5%;
+      top: 10.7%;
     }
 
      #heroend{
       gap: 8vw;
+
+    }
+
+    @keyframes slide {
+      100%
+      {
+        transform: translateX(13vw);
+      }
      }
     }
 

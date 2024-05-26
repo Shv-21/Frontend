@@ -143,7 +143,7 @@ const Review = () => {
 
 const DIV = styled.div`
 
-   margin: 6vw 0 4vw 0;
+   margin: 6vw 0 10vw 0;
    
    h1{
     padding:0 4vw;
@@ -205,7 +205,8 @@ const DIV = styled.div`
     .button01 h3{
       border: 1px solid black;
       border-radius: 40px;
-      padding: .4vw .8vw;
+      padding: .8vw 1.2vw;
+      font-weight: 600;
       font-size: 1vw;
       height: fit-content;
     }
@@ -260,7 +261,7 @@ const DIV = styled.div`
     }
 
     .info img{
-      width: 7vw;
+      width: 9vw;
       border-radius: 10px;
     }
 
@@ -278,7 +279,7 @@ const DIV = styled.div`
     }
 
     .service .tags{
-      gap: .5vw;
+      gap: 1vw;
     }
 
   .front.active{
@@ -304,11 +305,38 @@ const DIV = styled.div`
     width: 19vw;
   }
 
+@media (max-width: 1440px){
+
+  margin: 10vw 0 11vw 0;
+
+  p{
+    line-height: 1.6vw;
+  }
+}  
+
+@media (max-width: 1225px){
+  
+  .button01 h3{
+    font-size: 1.2vw;
+    font-weight: 600;
+    padding: .8vw 1.5vw;
+  }
+
+  .front.active{
+    max-height: 40vw;
+  }
+
+  p{
+    line-height: 1.8vw;
+  }
+ 
+
+}  
 
 @media (max-width: 1030px) {
 
   .front.active{
-    max-height: 37vw;
+    max-height: 42vw;
   }
 
   .separate{
@@ -331,7 +359,9 @@ const DIV = styled.div`
   }
 
   .button01 h3{
-    font-size: 1.4vw
+    font-size: 1.4vw;
+    font-weight: 600;
+    padding: 1vw 1.5vw;
   }
 
   .info{
@@ -339,7 +369,7 @@ const DIV = styled.div`
   }
 
   .info img{
-    width: 9vw;
+    width: 12vw;
   }
 
   p{
@@ -356,6 +386,8 @@ const DIV = styled.div`
 
 @media (max-width: 769px){
 
+  margin-block: 12vw 13vw;
+
   .front.active{
     max-height: 100vw;
   }
@@ -363,6 +395,18 @@ const DIV = styled.div`
   .button01 h3{
     padding: 1.3vw 2vw;
     font-size: 2vw;
+  }
+
+  .separate{
+    gap: 5vw;
+  }
+
+  .service{
+    gap: 2vw;
+  }
+
+  .info img{
+    width: 15vw;
   }
 
   p{
@@ -379,6 +423,9 @@ const DIV = styled.div`
 }
 
 @media (max-width: 426px){
+
+  margin-block: 17vw;
+
   h1{
       font-size: 31px;
     }
@@ -416,6 +463,17 @@ const DIV = styled.div`
     width: 25vw;
   }
 
+}
+
+@media (max-width: 376px) {
+
+  h1{
+    margin-bottom: 6vw;
+  }
+
+  .front.active{
+    max-height: 130vw;
+  }
 }
 
 `

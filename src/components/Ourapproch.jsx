@@ -325,6 +325,10 @@ const Div = styled.div`
     height: 1vw;
   }
 
+  .approch, .box{
+    margin-top: 2vw;
+  }
+
 }
 
 @media (max-width: 769px) {
@@ -362,6 +366,10 @@ const Div = styled.div`
   .approch{
      gap: 7vw;
   } 
+
+  .approch, .box{
+    margin-top: 3vw;
+  }
 
   #button{
     padding: 2vw 7vw 2vw 3vw;
@@ -411,6 +419,7 @@ const Div = styled.div`
 
   .box{
     gap: 4vw;
+    margin-top: 4vw;
   }
 
   .box-2{
@@ -419,6 +428,7 @@ const Div = styled.div`
 
   .approch{
      gap: 7vw;
+     margin-block: 4vw;
   } 
 
   #button{
