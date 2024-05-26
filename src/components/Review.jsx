@@ -36,14 +36,14 @@ const Review = () => {
                  <span >Service:</span>
                  <div className="tags"> 
                    <div className='button01' >
-                        <h3 className='same text01' onMouseEnter={()=>HandleEnter("nc01")} onMouseLeave={()=>HandleLeave('nc01')}>INVESTOR DECK</h3>
+                        <h4 className='same text01' onMouseEnter={()=>HandleEnter("nc01")} onMouseLeave={()=>HandleLeave('nc01')}>INVESTOR DECK</h4>
                         <div className='same nc01'onMouseEnter={()=>HandleEnter("text01")} onMouseLeave={()=>HandleLeave('text01')} >
                           <MdArrowDownward/>
                           <div className="dot"></div>
                         </div>
                    </div>
                    <div className='button01' >
-                        <h3 className='same text01' onMouseEnter={()=>HandleEnter("nc01")} onMouseLeave={()=>HandleLeave('nc01')} >SALES DECK</h3>
+                        <h4 className='same text01' onMouseEnter={()=>HandleEnter("nc01")} onMouseLeave={()=>HandleLeave('nc01')} >SALES DECK</h4>
                         <div className='same nc01' onMouseEnter={()=>HandleEnter("text01")} onMouseLeave={()=>HandleLeave('text01')}>
                           <MdArrowDownward/>
                           <div className="dot"></div>
@@ -72,14 +72,14 @@ const Review = () => {
                  <span >Service:</span>
                  <div className="tags">
                    <div className='button01' >
-                        <h3 className='same text01' onMouseEnter={()=>HandleEnter("nc01")} onMouseLeave={()=>HandleLeave('nc01')}>AGENCY</h3>
+                        <h4 className='same text01' onMouseEnter={()=>HandleEnter("nc01")} onMouseLeave={()=>HandleLeave('nc01')}>AGENCY</h4>
                         <div className='same nc01' onMouseEnter={()=>HandleEnter("text01")} onMouseLeave={()=>HandleLeave('text01')}>
                           <MdArrowDownward/>
                           <div className="dot"></div>
                         </div>
                    </div>
                    <div className='button01' >
-                        <h3 className='same text01' onMouseEnter={()=>HandleEnter("nc01")} onMouseLeave={()=>HandleLeave('nc01')}>BIG NEWS DECK</h3>
+                        <h4 className='same text01' onMouseEnter={()=>HandleEnter("nc01")} onMouseLeave={()=>HandleLeave('nc01')}>BIG NEWS DECK</h4>
                         <div className='same nc01'  onMouseEnter={()=>HandleEnter("text01")} onMouseLeave={()=>HandleLeave('text01')}>
                           <MdArrowDownward/>
                           <div className="dot"></div>
@@ -108,14 +108,14 @@ const Review = () => {
                  <span >Service:</span>
                  <div className="tags">
                    <div className='button01' >
-                        <h3 className='same text01' onMouseEnter={()=>HandleEnter("nc01")} onMouseLeave={()=>HandleLeave('nc01')}>COMPANY PRESENTATION</h3>
+                        <h4 className='same text01' onMouseEnter={()=>HandleEnter("nc01")} onMouseLeave={()=>HandleLeave('nc01')}>COMPANY PRESENTATION</h4>
                         <div className='same nc01' onMouseEnter={()=>HandleEnter("text01")} onMouseLeave={()=>HandleLeave('text01')}>
                           <MdArrowDownward/>
                           <div className="dot"></div>
                         </div>
                    </div>
                    <div className='button01' >
-                        <h3 className='same text01' onMouseEnter={()=>HandleEnter("nc01")} onMouseLeave={()=>HandleLeave('nc01')}>ONBOARDING PRESENTATION</h3>
+                        <h4 className='same text01' onMouseEnter={()=>HandleEnter("nc01")} onMouseLeave={()=>HandleLeave('nc01')}>ONBOARDING PRESENTATION</h4>
                         <div className='same nc01' onMouseEnter={()=>HandleEnter("text01")} onMouseLeave={()=>HandleLeave('text01')}>
                           <MdArrowDownward/>
                           <div className="dot"></div>
@@ -177,7 +177,7 @@ const DIV = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-block: 15px;
+    margin-block: 20px;
     max-height: 18px;
     overflow: hidden;
     transition: max-height 2s ease;
@@ -202,12 +202,11 @@ const DIV = styled.div`
       gap: .3vw;
     }
 
-    .button01 h3{
+    .button01 h4{
       border: 1px solid black;
       border-radius: 40px;
-      padding: .8vw 1.2vw;
+      padding: 10px 20px;
       font-weight: 600;
-      font-size: 1vw;
       height: fit-content;
     }
 
@@ -257,7 +256,7 @@ const DIV = styled.div`
 
     p{
       width: 31vw;
-      line-height: 1.5vw;
+      line-height: 22px;
     }
 
     .info img{
@@ -306,30 +305,20 @@ const DIV = styled.div`
   }
 
 @media (max-width: 1440px){
-
   margin: 10vw 0 11vw 0;
-
-  p{
-    line-height: 1.6vw;
-  }
 }  
 
-@media (max-width: 1225px){
-  
-  .button01 h3{
-    font-size: 1.2vw;
-    font-weight: 600;
-    padding: .8vw 1.5vw;
+@media (max-width: 1276px) {
+  .front.active{
+    max-height: 40vw;
   }
+}
+
+@media (max-width: 1225px){
 
   .front.active{
     max-height: 40vw;
   }
-
-  p{
-    line-height: 1.8vw;
-  }
- 
 
 }  
 
@@ -358,23 +347,16 @@ const DIV = styled.div`
     display: none;
   }
 
-  .button01 h3{
-    font-size: 1.4vw;
-    font-weight: 600;
-    padding: 1vw 1.5vw;
-  }
-
   .info{
     gap: 2vw;
   }
 
   .info img{
-    width: 12vw;
+    width: 123px;
   }
 
   p{
     width: fit-content;
-    line-height: 2.2vw;
   }
 }
 
@@ -389,37 +371,25 @@ const DIV = styled.div`
   margin-block: 12vw 13vw;
 
   .front.active{
-    max-height: 100vw;
-  }
-
-  .button01 h3{
-    padding: 1.3vw 2vw;
-    font-size: 2vw;
+    max-height: 150vw;
   }
 
   .separate{
-    gap: 5vw;
+    gap: 35px;
   }
 
-  .service{
-    gap: 2vw;
+  .service, .tags{
+    gap: 15px;
   }
 
   .info img{
-    width: 15vw;
+    width: 150px;
   }
 
-  p{
-    line-height: 2.8vw;
+  .info, .dis{
+    gap: 20px;
   }
 
-}
-
-
-@media (max-width: 459px) {
-  .front.active{
-    max-height: 100vw;
-  }
 }
 
 @media (max-width: 426px){
@@ -430,51 +400,32 @@ const DIV = styled.div`
       font-size: 31px;
     }
 
-  .front.active{
-    max-height: 120vw;
-  }
-
-  .separate{
-    gap: 6vw;
-  }
-
-  p{
-    line-height: 5vw;
-  }
-
-  .service .tags{
-    gap: 3vw;
-  }
-
-  .service{
-    gap: 4vw;
-  }
-
-  .button01 h3{
-    padding: 1.5vw 2.5vw;
-    font-size: 3.5vw;
-  }
-
-  .info, .dis{
-    gap: 5vw;
-  }
-
   .info img{
-    width: 25vw;
+    width: 120px;
+  }
+
+  .button01 h4{
+    padding: 2vw 4vw;
   }
 
 }
 
-@media (max-width: 376px) {
+@media (max-width: 379px) {
 
   h1{
     margin-bottom: 6vw;
   }
 
   .front.active{
-    max-height: 130vw;
+    max-height: 200vw;
   }
+
+  .button01 h4{
+    font-size: 4vw;
+  }
+
 }
+
 
 `
 

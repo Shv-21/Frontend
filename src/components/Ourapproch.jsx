@@ -53,8 +53,7 @@ const Ourapproch = () => {
           <div id='button' onMouseEnter={()=>HandleEnter("side02")} onMouseLeave={()=>HandleLeave('side02')} >
             <h3 className='same' id='text' >READ MORE</h3>
             <div className='same' id='nc'>
-              <MdArrowDownward/>
-              <div className="dot"></div>
+              <div className="dot"><MdArrowDownward/></div>
             </div>
           </div>
         </div>
@@ -210,22 +209,23 @@ const Div = styled.div`
     display: flex;
     align-items: center;
     background: #272626;
-    padding: 1.5vw 5vw 1.5vw 1.8vw;
+    padding: 1vw 1vw 1vw 1.8vw;
     border-radius: 40px;
     color: white;
+    gap: 3vw;
     transition: all 0.2s ease-in;
     overflow: hidden;
     z-index: 1;
   }
 
   #button h3{
-    font-size: smaller;
     font-weight: bold;
   }
 
   #nc{
-    position: absolute;
-    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: transparent;
     border-radius: 50%;
     width: 3vw;
@@ -233,26 +233,23 @@ const Div = styled.div`
   }
 
   .dot{
-    position: absolute;
-    top: 38%;
-    left: 50%;
+    display: flex;
     background: white;
-    height:.5vw;
+    align-items: center;
+    justify-content: center;
+    height: .5vw;
     width: .52vw;
     border-radius: 50%;
     transition: all .3s ease;
   }
 
   #button:hover .dot{
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
   }
 
   #nc svg{
-    position: absolute;
-    transform: translateX(-.4vw) translateY(-.3vw) rotate(220deg);
+    transform:rotate(220deg);
     width: 1.8vw;
     height: 1.8vw;
     z-index: 100;
@@ -261,8 +258,6 @@ const Div = styled.div`
 
   #button:hover svg {
     display: flex;
-    top: 32%;
-    left: 35%;
     color: black;
   }
 
@@ -308,25 +303,30 @@ const Div = styled.div`
   }
 
   #button{
-    padding: 1.5vw 6vw 1.5vw 2vw;
+    padding: 15px 15px 15px 20px;
   }
 
   #button h3{
     font-size: large;
   }
 
-  #button:hover svg{
-    top: 30%;
+  .dot{
+    width: 10px;
+    height: 10px;
   }
 
-  .dot{
-    top: 31%;
-    width: 1vw;
-    height: 1vw;
+  #nc {
+    width: 31px;
+    height: 31px;
+  }
+
+  #nc svg{
+    width: 19px;
+    height: 19px;
   }
 
   .approch, .box{
-    margin-top: 2vw;
+    margin-top: 20px;
   }
 
 }
@@ -372,32 +372,21 @@ const Div = styled.div`
   }
 
   #button{
-    padding: 2vw 7vw 2vw 3vw;
+    padding: 15px 16px 15px 23px;
   }
 
   #button h3{
     font-size: large;
   }
 
-  #button:hover svg{
-    top: 26%;
-    left: 30%;
-  }
-
   #nc{
-    width: 4vw;
-    height: 4vw;
+    width: 31px;
+    height: 31px;
   }
 
   #nc svg{
-    width: 2.5vw;
-    height: 2.5vw;
-  }
-
-  .dot{
-    top: 31%;
-    width: 1vw;
-    height: 1vw;
+    width: 20px;
+    height: 20px;
   }
 
   .side-1{
@@ -431,33 +420,8 @@ const Div = styled.div`
      margin-block: 4vw;
   } 
 
-  #button{
-    padding: 3vw 10vw 3vw 5vw;
-  }
-
   #button h3{
     font-size: large;
-  }
-
-  #button:hover svg{
-    top: 22%;
-    left: 24%;
-  }
-
-  #nc{
-    width: 6vw;
-    height: 6vw;
-  }
-
-  #nc svg{
-    width: 4vw;
-    height: 4vw;
-  }
-
-  .dot{
-    top: 35%;
-    width: 1.5vw;
-    height: 1.5vw;
   }
 
   .side-1{
