@@ -29,7 +29,7 @@ const HandleLeave = (id) =>{
         <h3>For public and private companies</h3>
         <h3>From the first pitch to IPO</h3>
         <div id='stp' >
-          <h3 className='same' id='text' onMouseEnter={()=>HandleEnter("nc")} onMouseLeave={()=>HandleLeave('nc')} >START THE PROJECT</h3>
+          <h4 className='same' id='text' onMouseEnter={()=>HandleEnter("nc")} onMouseLeave={()=>HandleLeave('nc')} >START THE PROJECT</h4>
           <div className='same' id='nc' onMouseEnter={()=>HandleEnter("text")} onMouseLeave={()=>HandleLeave("text")} >
             <MdArrowDownward/>
             <div className="dot"></div>
@@ -94,10 +94,11 @@ const Div = styled.div`
       justify-content: space-between;
     }
 
-    h3{
+    h3, h4{
       font-family: "Roboto", sans-serif;
       font-weight: lighter;
       font-size: medium;
+      font-weight: 600;
     }   
 
     h3:nth-child(2){
@@ -107,14 +108,13 @@ const Div = styled.div`
     #stp{
       display: flex;
       align-items: center;
-      gap: .3vw;
+      gap: 5px;
     }
 
-    #stp h3{
+    #stp h4{
       border: 1px solid black;
       border-radius: 40px;
-      padding: .4vw .8vw;
-      font-size: .95vw;
+      padding: 10px 15px;
       height: fit-content;
     }
 
@@ -125,15 +125,13 @@ const Div = styled.div`
       justify-content: center;
       border: 1px solid black;
       border-radius: 50%;
-      padding: .5vw .5vw;
+      padding: 12px 12px;
       transition: all .2s ease ;
     }
 
     #nc svg{
       transform: rotate(-130deg);
-      scale: 1.2;
-      margin-bottom: .1vw;
-      margin-left: .1vw ;
+      scale: 1.3;
     }
 
     .dot{
@@ -187,25 +185,6 @@ const Div = styled.div`
       
     }
 
-    @media (max-width: 1440px){
-
-      #stp h3{
-        padding: .6vw 1.2vw;
-      }
-
-      h3{
-        font-weight: 600;
-      }
-
-    }
-
-    @media (max-width: 1301px) {
-      #stp h3 {
-       font-size: 1.1vw;
-       padding: .6vw 1.2vw;
-}
-    }
-
     @media (max-width: 1213px){
 
       margin-bottom: 8vw;
@@ -223,11 +202,6 @@ const Div = styled.div`
         top: 22.5%;
         width: 11vw;
       }
-
-    #stp h3 {
-    font-size: 1.3vw;
-    padding: .8vw 1.2vw;
-}
 
     #stp #nc{
       display : none;
@@ -256,6 +230,10 @@ const Div = styled.div`
       h1{
       font-size: 10vw;
       line-height: 8.5vw;
+    }
+
+    h3:nth-child(2){
+      margin: 0;
     }
 
     .ochiimg{
@@ -289,11 +267,6 @@ const Div = styled.div`
       font-size: 10vw;
       line-height: 8.5vw;
     }
-
-      #stp h3{
-       font-size: 2vw;
-       padding: 1.2vw 2vw;
-      }
 
       #heroend h3{
         margin: 0;
@@ -369,15 +342,25 @@ const Div = styled.div`
       margin-bottom: 25vw;
     } 
 
-    #heroend h3, #stp h3{
+    #heroend h3{
       font-weight: 600;
     }
-
-    #stp h3{
-      font-size: 3.5vw;
-      padding: 2vw 3vw;
-    }
    } 
+
+   @media (max-width: 376px){
+    .ochiimg{
+      top: 12%;
+    }
+
+    .herotag1 {
+    z-index: 5;
+    background-color: #f1f1f1;
+    width: fit-content;
+    animation:  1s ease forwards;
+}
+
+
+   }
 
 `
 export default Hero
